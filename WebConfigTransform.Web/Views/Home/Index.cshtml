@@ -1,0 +1,26 @@
+﻿@model ConfigTransformViewModel;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <form method="post">
+
+        <div class="form-group">
+            <label asp-for="WebConfigStr"></label>
+            <textarea asp-for="WebConfigStr" cols="105" rows="15" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <label asp-for="TransformConfigStr"></label>
+            <textarea asp-for="TransformConfigStr" cols="105" rows="15" class="form-control"></textarea>
+
+        </div>
+
+        <button type="submit" class="btn btn-default btn-primary">Transform</button>
+    </form>
+    <div class="form-group">
+        <label asp-for="OutPutConfigStr"></label>
+        <textarea asp-for="OutPutConfigStr" cols="105" rows="30" readonly="readonly" class="form-control"></textarea>
+    </div>
+</div>
