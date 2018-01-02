@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
+﻿using System.IO;
 
 namespace WebConfigTransform.Core
 {
-    public sealed class WebConfigTransformer
+    public static class WebConfigTransformer
     {
         public static string Transform(string webConfigStr, string transformConfigStr, string outputConfigStr, string outPutFileName)
         {
